@@ -15,7 +15,7 @@
 
  var yourMail = prompt("inserisci il tuo indirizzo eMail!");
 
-
+ //
  var isYourmailIn = false;
 
 
@@ -32,45 +32,3 @@
  } else {
      document.getElementById('mail').innerHTML = "SI";
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// for (var i = 0; i < mailList.length; i++) {
-//
-//     if (yourMail == mailList[i]) {
-//         msg = "si";
-//         i = mailList.length;
-//     } else {
-//         msg = "NO";
-//     }
-// }
-//
-//
-// document.getElementById('mail').innerHTML = msg;
