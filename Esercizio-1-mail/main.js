@@ -15,21 +15,62 @@
 
  var yourMail = prompt("inserisci il tuo indirizzo eMail!");
 
- var msg;
+
+ var isYourmailIn = false;
 
 
-for (var i = 0; i < mailList.length; i++) {
+ for (var i = 0; i < mailList.length; i++) {
+     if (yourMail == mailList[i]) {
+         isYourmailIn = true;
+     }
+ }
 
-    if (yourMail == mailList[i]) {
-        msg = "si";
-        i = mailList.length;
-    } else {
-        msg = "NO";
-    }
-}
+ console.log(isYourmailIn);
 
-// if (yourMail != mailList[i]) {
-//     msg = "NO";
+ if (isYourmailIn == false) {
+     document.getElementById('mail').innerHTML = "NO";
+ } else {
+     document.getElementById('mail').innerHTML = "SI";
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (var i = 0; i < mailList.length; i++) {
+//
+//     if (yourMail == mailList[i]) {
+//         msg = "si";
+//         i = mailList.length;
+//     } else {
+//         msg = "NO";
+//     }
 // }
-
-document.getElementById('mail').innerHTML = msg;
+//
+//
+// document.getElementById('mail').innerHTML = msg;
